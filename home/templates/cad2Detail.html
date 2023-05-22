@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Jubayer's Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/logo.png' %}" rel="icon">
+  <link href="{% static 'assets/img/logo.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+    
+    .back-button {
+      position: absolute;
+      text-indent: -15px;
+      padding: 15px  15px 10px;
+      width: 53px;/* modified by label length */
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    swiper-container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details ======= -->
+    <div id="cad1Details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Project 'TRUCK' detail</h2>
+
+            <div class="portfolio-details-slider swiper">
+              <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+              loop="true">
+                <swiper-slide><img src="{% static 'assets\img\CAD2\c1.21.jpg' %}" alt=""></swiper-slide>
+                <swiper-slide><img src="{% static 'assets\img\CAD2\c1.23.jpg' %}" alt=""></swiper-slide>
+                <swiper-slide><img src="{% static 'assets\img\CAD2\c1.24.jpg' %}" alt=""></swiper-slide>
+                <swiper-slide><img src="{% static 'assets\img\CAD2\c1.25.jpg' %}" alt=""></swiper-slide>
+                
+              </swiper-container>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Computer-Aided design</li>
+              <li><strong>Project date</strong>: 25 March, 2022</li>
+            </ul>
+
+            <p>
+              I did this design for a contest of 'CADers' and won the 'designer of th week' award. I did this design using AutoCAD and rendered using KeyShot.
+            </p>
+          </div>
+
+        </div>
+        <div class="back-button">
+          <a href="{% url 'index' %}" class="label">back</a>
+        </div>
+
+      </div>
+    </div><!-- End Portfolio Details -->
+
+
+  </main><!-- End #main -->
+
+   <!-- Vendor JS Files -->
+   <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+   <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+   <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+   <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+   <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+   <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+   <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+ 
+   <!-- Template Main JS File -->
+   <script src="{% static 'assets/js/main.js' %}"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+</body>
+
+</html>
